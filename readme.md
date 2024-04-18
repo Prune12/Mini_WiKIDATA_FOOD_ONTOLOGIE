@@ -1,0 +1,1 @@
+Ce repository contient une application web de gestion de Repas fait en html,css,javascript qui permet de consommer les données d'une ontologie à l'aide de requete sparql et donne aussi la possibilité à l'utilisateur de créer ses propres requêtes sparql
