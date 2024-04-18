@@ -1,0 +1,319 @@
+/* configuration du body */
+body {
+    font-family: 'laila', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* navbar */
+/* Stylisation de la navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(34, 162, 227, 0.5), inset 0px -5px 10px rgba(34, 162, 227, 0.25);
+}
+
+/* Stylisation de la sidebar */
+.sidebar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    
+}
+
+.sidebar ul {
+    display: flex;
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-right: 20px; /* Espacement entre les éléments */
+}
+
+.sidebar ul a {
+    text-decoration: none;
+    color: #22A2E3;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul a:hover {
+    background-color: #22A2E3;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+
+ul li:hover a {
+    padding-left: 52px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    cursor: pointer;
+    color: #22A2E3;
+
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -326px;
+    top: 25px;
+    font-size: 35px;
+    color: #22A2E3;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+#check:checked~label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked~label #cancel {
+    left: 326px;
+
+}
+
+#classwork{
+    font-family: 'Laila',sans-serif;
+    font-size: 32px;
+    margin-left: 95px;
+    padding-top: 12px;
+}
+
+#class{
+    color: #22A2E3;
+}
+
+#work{
+    color: black;
+}
+
+.sidebar-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.sidebar-footer-item {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-footer-item i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.sidebar-footer-item:last-child i {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.sidebar-footer-item:first-child i {
+    color: white;
+    background-color: #DD1313;
+    border-radius: 50%;
+}
+
+.sidebar-footer-item:first-child span {
+    color: #DD1313;
+}
+
+.sidebar-footer-item:last-child i {
+    color: #22A2E3;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.sidebar-footer-item:last-child span {
+    color: #22A2E3;
+}
+
+/* couleur des champs de la sidebar */
+
+.lightgrey {
+    color: rgb(107, 105, 105);
+}
+
+.black {
+    color: black;
+}
+
+.grey {
+    color: rgb(78, 77, 77);
+}
+
+@media screen and (max-width:416px){
+
+/* stylisation de la sidebar */
+.sidebar {
+    z-index: 11;
+    position: fixed;
+    left: -215px;
+    width: 215px;
+    height: 100%;
+    background: white;
+    transform: all .5s ease;
+    filter: drop-shadow(5px 0px 20px rgba(0, 0, 0, 0.25));
+
+}
+
+.sidebar ul a {
+    display: block;
+    width: 100%;
+    line-height: 65px;
+    font-size: 10px;
+    color: #22A2E3;
+    padding-left: border-box;
+    /* border-top: 1px solid rgba(255, 255, 255, .1); */
+    transition: .1s;
+    position: relative;
+}
+
+.sidebar ul a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.5) 0%, #22A2E3 50%, rgba(34, 162, 227, 0) 100%);
+}
+
+ul li:hover a {
+    padding-left: 26px;
+}
+
+.sidebar ul a i {
+    margin-right: 8px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    cursor: pointer;
+    color: #22A2E3;
+
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 25px;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -40px;
+    top: 25px;
+    font-size: 25px;
+    color: #22A2E3;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+#check:checked~label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked~label #cancel {
+    left: 40px;
+
+}
+a{
+    text-decoration: none;
+    text-transform: none;
+}
+
+}
+
+.row {
+    display: flex;
+    margin-left: 250px; 
+    /* justify-content: space-between; Pour ajouter de l'espace entre les éléments */
+}
+  
+.col-md-3select-outline {
+    padding-right: 10px; /* Pour ajouter une marge à droite sur les select */
+    
+    
+}
+
+.selectbar{
+ 
+    width: 250px; /* Augmente la largeur */
+    height: 50px; /* Augmente la hauteur */
+    font-size: 20px;
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante */
+    justify-content: space-between; /* Pour ajouter de l'espace entre les éléments */
+    margin-left: 100px; /* Notez que ce décalage peut influencer le placement des éléments */
+  }
+  
+  .col-md-4 {
+    width: calc(33.33% - 10px); /* 33.33% pour 3 éléments par ligne avec espace entre eux */
+    margin-bottom: 20px; /* Espacement entre les lignes */
+  }
+  
+ 
+  
+
+  
+  

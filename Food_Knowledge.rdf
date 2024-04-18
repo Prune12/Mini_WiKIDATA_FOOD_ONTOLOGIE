@@ -1,0 +1,1371 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge/"
+     xml:base="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Food_Knowledge="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#eat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#eat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#isEatenBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#estComposeDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#estComposeDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#hasFoodComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#hasFoodComponent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#hasFoodIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#hasFoodIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#isEatenBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#isEatenBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#isFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#isFrom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#DescriptionFood -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#DescriptionFood">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NameFood -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NameFood">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NameIngredient -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NameIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NameNultriment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NameNultriment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NamePers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NamePers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NamePlace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NamePlace">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#QteNutriment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#QteNutriment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#imageFood -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#imageFood">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#poids -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#poids">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#surnamePers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#surnamePers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#taille -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#taille">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Acides_gras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Acides_gras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Arachide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Arachide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Aubergine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Aubergine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Bitekuteku -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Bitekuteku">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Boeuf_sauce_bloquee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Boeuf_sauce_bloquee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calories -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calories">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Chikwangue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Chikwangue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Cholesterol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Cholesterol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Eau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Eau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Farine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Farine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Feuille_de_manioc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Feuille_de_manioc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibres">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fromage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fromage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fumbwa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fumbwa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Glucides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Glucides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Haricot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Haricot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_de_Palme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_de_Palme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_vegetale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_vegetale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Levure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Levure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Liboke -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Liboke">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Lipides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Lipides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Madesu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Madesu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mikate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mikate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Moussaka -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Moussaka">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Oignon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Oignon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Poisson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Poisson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Proteines -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Proteines">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#SakaSaka -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#SakaSaka">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Sel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Sel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Sucre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Sucre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Tomate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Tomate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Viande -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Viande">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Vitamines"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Vitamines"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Vitamines"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Vitamines"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Vitamines"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Vitamines -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Vitamines">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Acide_gras1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Acide_gras1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Acides_gras"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <Food_Knowledge:NameNultriment>acide_gras</Food_Knowledge:NameNultriment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Aubergine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Aubergine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Aubergine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibre1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineA.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineC.0"/>
+        <Food_Knowledge:NameIngredient>aubergine</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Bitekuteku -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Bitekuteku">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Bitekuteku"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Eau"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Farine"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Levure"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Sucre"/>
+        <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
+        <Food_Knowledge:DescriptionFood>Bitekuteku</Food_Knowledge:DescriptionFood>
+        <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
+        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Bitekuteku.jpeg</Food_Knowledge:imageFood>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Boeuf_sauce_bloquee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Boeuf_sauce_bloquee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Boeuf_sauce_bloquee"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_vegetale"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Oignon"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Tomate"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Viande"/>
+        <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
+        <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
+        <Food_Knowledge:NameFood>Boeuf sauce bloquée</Food_Knowledge:NameFood>
+        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Boeuf sauce bloquée.jpeg</Food_Knowledge:imageFood>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#CE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#CE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Bitekuteku"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Boeuf_sauce_bloquee"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Chikwangue"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fumbwa"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mikate"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Moussaka"/>
+        <Food_Knowledge:NamePers>EBA</Food_Knowledge:NamePers>
+        <Food_Knowledge:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21</Food_Knowledge:age>
+        <Food_Knowledge:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</Food_Knowledge:poids>
+        <Food_Knowledge:surnamePers>Chantal</Food_Knowledge:surnamePers>
+        <Food_Knowledge:taille rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.58</Food_Knowledge:taille>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <Food_Knowledge:NameIngredient>calcium</Food_Knowledge:NameIngredient>
+        <Food_Knowledge:QteNutriment>16 mg</Food_Knowledge:QteNutriment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Chikwangue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Chikwangue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Chikwangue"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Eau"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Farine"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Sel"/>
+        <Food_Knowledge:isEatenBy rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#CE"/>
+        <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
+        <Food_Knowledge:DescriptionFood>Repas congolais</Food_Knowledge:DescriptionFood>
+        <Food_Knowledge:NameFood>Chikwangue</Food_Knowledge:NameFood>
+        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/chikwangue.jpeg</Food_Knowledge:imageFood>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Place"/>
+        <Food_Knowledge:NamePlace>CONGO</Food_Knowledge:NamePlace>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Eau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Eau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Eau"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <Food_Knowledge:NameIngredient>eau</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mikate"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Moussaka"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#SakaSaka"/>
+        <Food_Knowledge:NamePers>Famba</Food_Knowledge:NamePers>
+        <Food_Knowledge:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</Food_Knowledge:age>
+        <Food_Knowledge:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45</Food_Knowledge:poids>
+        <Food_Knowledge:surnamePers>Arthur</Food_Knowledge:surnamePers>
+        <Food_Knowledge:taille rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.64</Food_Knowledge:taille>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Farine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Farine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Farine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibre1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineC.0"/>
+        <Food_Knowledge:NameIngredient>Farine</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <Food_Knowledge:NameNultriment>fer</Food_Knowledge:NameNultriment>
+        <Food_Knowledge:QteNutriment>0.3 mg</Food_Knowledge:QteNutriment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Feuille_de_manioc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Feuille_de_manioc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Feuille_de_manioc"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibre1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineA.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineC.0"/>
+        <Food_Knowledge:NameIngredient>feuille_de_manioc</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibre1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibre1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibres"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <Food_Knowledge:NameNultriment>fibre</Food_Knowledge:NameNultriment>
+        <Food_Knowledge:QteNutriment>1.9 g</Food_Knowledge:QteNutriment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fromage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fromage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fromage"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#cholesterol.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0"/>
+        <Food_Knowledge:NameIngredient>fromage</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fumbwa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fumbwa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fumbwa"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Feuille_de_manioc"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_de_Palme"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#poisson"/>
+        <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
+        <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
+        <Food_Knowledge:NameFood>Fumbwa</Food_Knowledge:NameFood>
+        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Fumbwa.jpeg</Food_Knowledge:imageFood>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Haricot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Haricot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Haricot"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibre1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineA.0"/>
+        <Food_Knowledge:NameIngredient>haricot</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_de_Palme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_de_Palme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_de_Palme"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Acide_gras1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineE.0"/>
+        <Food_Knowledge:NameIngredient>huile_de_palme</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_vegetale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_vegetale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_vegetale"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Acide_gras1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineE.0"/>
+        <Food_Knowledge:NameIngredient>huile vegetale</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Levure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Levure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Levure"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibre1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineB.0"/>
+        <Food_Knowledge:NameIngredient>levure</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Liboke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Liboke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Liboke"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Feuille_de_manioc"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_de_Palme"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#arachide"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#poisson"/>
+        <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
+        <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
+        <Food_Knowledge:NameFood>Liboke</Food_Knowledge:NameFood>
+        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/liboke.jpeg</Food_Knowledge:imageFood>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Madesu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Madesu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Madesu"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Haricot"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_vegetale"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mais"/>
+        <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
+        <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
+        <Food_Knowledge:NameFood>Madesu</Food_Knowledge:NameFood>
+        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Madesu.jpeg</Food_Knowledge:imageFood>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mais -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mais">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mais"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibre1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineA.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineC.0"/>
+        <Food_Knowledge:NameIngredient>mais</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mikate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mikate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mikate"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Eau"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Farine"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Levure"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Sucre"/>
+        <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
+        <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
+        <Food_Knowledge:NameFood>Mikate</Food_Knowledge:NameFood>
+        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Mikate.jpeg</Food_Knowledge:imageFood>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Moussaka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Moussaka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Moussaka"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Aubergine"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fromage"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Oignon"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Tomate"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Viande"/>
+        <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
+        <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
+        <Food_Knowledge:NameFood>Moussaka</Food_Knowledge:NameFood>
+        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Moussaka.jpeg</Food_Knowledge:imageFood>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fumbwa"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Moussaka"/>
+        <Food_Knowledge:NamePers>Ngougne</Food_Knowledge:NamePers>
+        <Food_Knowledge:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22</Food_Knowledge:age>
+        <Food_Knowledge:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</Food_Knowledge:poids>
+        <Food_Knowledge:surnamePers>Cerena Leonie</Food_Knowledge:surnamePers>
+        <Food_Knowledge:taille rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.70</Food_Knowledge:taille>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#ND -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#ND">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Boeuf_sauce_bloquee"/>
+        <Food_Knowledge:NamePers>Ngangne</Food_Knowledge:NamePers>
+        <Food_Knowledge:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">26</Food_Knowledge:age>
+        <Food_Knowledge:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</Food_Knowledge:poids>
+        <Food_Knowledge:surnamePers>Davina</Food_Knowledge:surnamePers>
+        <Food_Knowledge:taille rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.75</Food_Knowledge:taille>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Liboke"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Madesu"/>
+        <Food_Knowledge:NamePers>Ngolong</Food_Knowledge:NamePers>
+        <Food_Knowledge:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55</Food_Knowledge:poids>
+        <Food_Knowledge:surnamePers>Emmanuel</Food_Knowledge:surnamePers>
+        <Food_Knowledge:taille rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.58</Food_Knowledge:taille>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NET -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NET">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Liboke"/>
+        <Food_Knowledge:NamePers>Ngolong</Food_Knowledge:NamePers>
+        <Food_Knowledge:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</Food_Knowledge:age>
+        <Food_Knowledge:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45</Food_Knowledge:poids>
+        <Food_Knowledge:surnamePers>Etienne</Food_Knowledge:surnamePers>
+        <Food_Knowledge:taille rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.49</Food_Knowledge:taille>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <Food_Knowledge:NamePers>Nyamsi</Food_Knowledge:NamePers>
+        <Food_Knowledge:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19</Food_Knowledge:age>
+        <Food_Knowledge:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</Food_Knowledge:poids>
+        <Food_Knowledge:surnamePers>Marcelin</Food_Knowledge:surnamePers>
+        <Food_Knowledge:taille rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.80</Food_Knowledge:taille>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#NS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Chikwangue"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Liboke"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Madesu"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#SakaSaka"/>
+        <Food_Knowledge:NamePers>Nketchati</Food_Knowledge:NamePers>
+        <Food_Knowledge:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22</Food_Knowledge:age>
+        <Food_Knowledge:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55</Food_Knowledge:poids>
+        <Food_Knowledge:surnamePers>Stevia</Food_Knowledge:surnamePers>
+        <Food_Knowledge:taille rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.58</Food_Knowledge:taille>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Oignon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Oignon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Oignon"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibre1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineC.0"/>
+        <Food_Knowledge:NameIngredient>oignon</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#PI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#PI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Boeuf_sauce_bloquee"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Mikate"/>
+        <Food_Knowledge:NamePers>Pokam</Food_Knowledge:NamePers>
+        <Food_Knowledge:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</Food_Knowledge:age>
+        <Food_Knowledge:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</Food_Knowledge:poids>
+        <Food_Knowledge:surnamePers>Idriss</Food_Knowledge:surnamePers>
+        <Food_Knowledge:taille rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.80</Food_Knowledge:taille>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#SakaSaka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#SakaSaka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Dish"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Food"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#SakaSaka"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Feuille_de_manioc"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Huile_de_Palme"/>
+        <Food_Knowledge:hasFoodIngredient rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Viande"/>
+        <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
+        <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
+        <Food_Knowledge:NameFood>Saka Saka</Food_Knowledge:NameFood>
+        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Saka saka (sauce feuille de manioc).jpeg</Food_Knowledge:imageFood>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Sel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Sel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Sel"/>
+        <Food_Knowledge:NameIngredient>Sel de mer</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Sucre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Sucre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Sucre"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibre1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0"/>
+        <Food_Knowledge:NameIngredient>sucre</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#TE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#TE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Person"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Chikwangue"/>
+        <Food_Knowledge:eat rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#SakaSaka"/>
+        <Food_Knowledge:NamePers>Tela</Food_Knowledge:NamePers>
+        <Food_Knowledge:age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21</Food_Knowledge:age>
+        <Food_Knowledge:poids rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65</Food_Knowledge:poids>
+        <Food_Knowledge:surnamePers>Ebenezer</Food_Knowledge:surnamePers>
+        <Food_Knowledge:taille rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.70</Food_Knowledge:taille>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Tomate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Tomate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Tomate"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibre1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineA.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineC.0"/>
+        <Food_Knowledge:NameIngredient>tomate</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Viande -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Viande">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Viande"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#cholesterol.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0"/>
+        <Food_Knowledge:NameIngredient>viande</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#arachide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#arachide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Arachide"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fibre1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineE.0"/>
+        <Food_Knowledge:NameIngredient>arachide</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calories"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <Food_Knowledge:NameIngredient>calorie</Food_Knowledge:NameIngredient>
+        <Food_Knowledge:QteNutriment>330 kcal</Food_Knowledge:QteNutriment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#cholesterol.0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#cholesterol.0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Cholesterol"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <Food_Knowledge:NameIngredient>cholesterol</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Glucides"/>
+        <Food_Knowledge:NameNultriment>glucide</Food_Knowledge:NameNultriment>
+        <Food_Knowledge:QteNutriment>82 g</Food_Knowledge:QteNutriment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Lipides"/>
+        <Food_Knowledge:NameNultriment>lipide</Food_Knowledge:NameNultriment>
+        <Food_Knowledge:QteNutriment>0.3 g</Food_Knowledge:QteNutriment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#poisson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#poisson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodIngredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Poisson"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Calcium1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Fer1"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#calorie.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#cholesterol.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#glucide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#lipide.0"/>
+        <Food_Knowledge:estComposeDe rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0"/>
+        <Food_Knowledge:NameIngredient>poisson</Food_Knowledge:NameIngredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#proteine.0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Proteines"/>
+        <Food_Knowledge:NameNultriment>proteine</Food_Knowledge:NameNultriment>
+        <Food_Knowledge:QteNutriment>0.6 g</Food_Knowledge:QteNutriment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineA.0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineA.0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Vitamines"/>
+        <Food_Knowledge:NameNultriment>vitamineA</Food_Knowledge:NameNultriment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineB.0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineB.0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineB"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Vitamines"/>
+        <Food_Knowledge:NameNultriment>vitamineB</Food_Knowledge:NameNultriment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineC.0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineC.0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Vitamines"/>
+        <Food_Knowledge:NameNultriment>vitamineC</Food_Knowledge:NameNultriment>
+        <Food_Knowledge:QteNutriment>0.2 mg</Food_Knowledge:QteNutriment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineD"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Vitamines"/>
+        <Food_Knowledge:NameNultriment>vitamineD</Food_Knowledge:NameNultriment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineE.0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#vitamineE.0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#FoodComponent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#VitamineE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Vitamines"/>
+        <Food_Knowledge:NameNultriment>vitamineE</Food_Knowledge:NameNultriment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

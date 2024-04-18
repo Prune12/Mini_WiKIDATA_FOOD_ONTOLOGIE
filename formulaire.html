@@ -1,0 +1,75 @@
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/compte.css">
+     <link rel="stylesheet" href="css/sidebar.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="https://kit.fontawesome.com/94cd0ca0b2.js" crossorigin="anonymous"></script>
+
+     <title>Save Food</title>
+ </head>
+
+ <body>
+  <input type="checkbox" id="check">
+
+  <nav class="navbar">
+    <div class="navbar-left">
+  <span id="classwork"><span id="class">Wikidata</span>Food</span>
+  
+</div>
+<div class="navbar-center">
+  <div class="sidebar">   
+    <ul>
+       
+        <li><a href="index.html"><span> HOME</span></a></li>
+        <li><a href="formulaire.html"><span class="black">Register New Food</span></a></li>
+        <li><a href="displayClassAndSubclass.html"><span class="black">Display class and Subclass</span></a></li>
+       <li><a href="sendSparqlQuery.html"><span class="black">write sparql Query</span></a></li>
+        
+    </ul>
+
+</div>
+  
+</div>
+<div class="navbar-right">
+</div>
+</nav>
+
+
+ 
+  <div class="monformulaire">
+    <form action="#" method="POST" id="foodForm" class="content">
+        <h1>Food Information</h1>
+        <div>
+            <label for="name">Name of food</label>
+            <input type="text" name="nom" id="name" placeholder="name of your food">
+        </div>
+        <div>
+            <label for="matricule">Description of food</label>
+            <input type="text" name="matricule" id="matricule" placeholder="description">
+        </div>
+    
+        <div class="mb-3">
+           <label for="formFile" class="form-label">Image of Food</label>
+           <input class="form-control" type="file" id="formFile">
+       </div>
+        
+        <div class="buttons">
+            <button type="submit">Enregistrer</button>
+        </div>
+
+    </form>
+</div>
+
+
+ </body>
+
+ <script src="js/InsertFood.js"></script>
+
+ </html>
