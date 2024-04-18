@@ -649,7 +649,7 @@
         <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
         <Food_Knowledge:DescriptionFood>Bitekuteku</Food_Knowledge:DescriptionFood>
         <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
-        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Bitekuteku.jpeg</Food_Knowledge:imageFood>
+        <Food_Knowledge:imageFood>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Congo-Brazzaville/Bitekuteku.jpeg</Food_Knowledge:imageFood>
     </owl:NamedIndividual>
     
 
@@ -667,7 +667,7 @@
         <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
         <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
         <Food_Knowledge:NameFood>Boeuf sauce bloquée</Food_Knowledge:NameFood>
-        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Boeuf sauce bloquée.jpeg</Food_Knowledge:imageFood>
+        <Food_Knowledge:imageFood>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Congo-Brazzaville/Boeuf%20sauce%20bloqu%C3%A9e.jpeg</Food_Knowledge:imageFood>
     </owl:NamedIndividual>
     
 
@@ -715,7 +715,7 @@
         <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
         <Food_Knowledge:DescriptionFood>Repas congolais</Food_Knowledge:DescriptionFood>
         <Food_Knowledge:NameFood>Chikwangue</Food_Knowledge:NameFood>
-        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/chikwangue.jpeg</Food_Knowledge:imageFood>
+        <Food_Knowledge:imageFood>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Congo-Brazzaville/chikwangue.jpeg</Food_Knowledge:imageFood>
     </owl:NamedIndividual>
     
 
@@ -851,7 +851,7 @@
         <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
         <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
         <Food_Knowledge:NameFood>Fumbwa</Food_Knowledge:NameFood>
-        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Fumbwa.jpeg</Food_Knowledge:imageFood>
+        <Food_Knowledge:imageFood>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Congo-Brazzaville/Fumbwa.jpeg</Food_Knowledge:imageFood>
     </owl:NamedIndividual>
     
 
@@ -931,7 +931,7 @@
         <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
         <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
         <Food_Knowledge:NameFood>Liboke</Food_Knowledge:NameFood>
-        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/liboke.jpeg</Food_Knowledge:imageFood>
+        <Food_Knowledge:imageFood>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Congo-Brazzaville/liboke.jpeg</Food_Knowledge:imageFood>
     </owl:NamedIndividual>
     
 
@@ -948,7 +948,7 @@
         <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
         <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
         <Food_Knowledge:NameFood>Madesu</Food_Knowledge:NameFood>
-        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Madesu.jpeg</Food_Knowledge:imageFood>
+        <Food_Knowledge:imageFood>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Congo-Brazzaville/Madesu.jpeg</Food_Knowledge:imageFood>
     </owl:NamedIndividual>
     
 
@@ -985,7 +985,7 @@
         <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
         <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
         <Food_Knowledge:NameFood>Mikate</Food_Knowledge:NameFood>
-        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Mikate.jpeg</Food_Knowledge:imageFood>
+        <Food_Knowledge:imageFood>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Congo-Brazzaville/Mikate.jpeg</Food_Knowledge:imageFood>
     </owl:NamedIndividual>
     
 
@@ -1004,7 +1004,7 @@
         <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
         <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
         <Food_Knowledge:NameFood>Moussaka</Food_Knowledge:NameFood>
-        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Moussaka.jpeg</Food_Knowledge:imageFood>
+        <Food_Knowledge:imageFood>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Congo-Brazzaville/Moussaka.jpeg</Food_Knowledge:imageFood>
     </owl:NamedIndividual>
     
 
@@ -1141,7 +1141,7 @@
         <Food_Knowledge:isFrom rdf:resource="http://www.semanticweb.org/prunelle/ontologies/2024/2/Food_Knowledge#Congo"/>
         <Food_Knowledge:DescriptionFood>repas congolais</Food_Knowledge:DescriptionFood>
         <Food_Knowledge:NameFood>Saka Saka</Food_Knowledge:NameFood>
-        <Food_Knowledge:imageFood>/home/prunelle/Bureau/cours_INFO/cours_master/semestre2/web_semantic/nourriture_congolaise/Saka saka (sauce feuille de manioc).jpeg</Food_Knowledge:imageFood>
+        <Food_Knowledge:imageFood>https://github.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Congo-Brazzaville/Saka%20saka%20(sauce%20feuille%20de%20manioc).jpeg</Food_Knowledge:imageFood>
     </owl:NamedIndividual>
     
 
