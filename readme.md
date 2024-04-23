@@ -30,7 +30,7 @@ pour lancer le projet:
     - alors ouvrer ce dossier d'installation dans votre terminal et 
     - tapez "./fuseki-server" et votrez server sera lancé
 
-- Allez a la racine du projet et recuperer le fichier "Food_Knowledge.rdf"Food_knowledge
+- Allez a la racine du projet et recuperer le fichier "Food_Knowledge.rdf"
 - Aller dans votre navigateur et saisissez "localhost:8080" 
 - ensuite creer un nouveau dataset, ce dataset doit avoir pour nom "Food_knowledge" car c'est ainsi que mon ontologie est nommé dans le fichier rdf
 - puis importer le fichier "Food_Knowledge.rdf" dans le dataset nommé "Food_knowledge" qui vous aurez creer
